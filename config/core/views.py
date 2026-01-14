@@ -11,3 +11,4 @@ def home(request):
         {"name": "Charlie", "is_active": True},
         
     ]
+    return render(request, 'core/home.html', {"users": users})
