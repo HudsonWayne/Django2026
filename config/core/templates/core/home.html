@@ -1,2 +1,16 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Hello Django 👋</h1>
+    <p>Here’s a list of users:</p>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.name }} {% if user.is_active %}(Active){% else %}(Inactive){% endif %}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
