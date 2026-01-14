@@ -8,6 +8,6 @@ def home(request):
     user = [
         {"name": "Wayne", "is_active": True},
         {"name": "Bob", "is_active": False},
-        {"name": "Bob", "is_active": False},
+        {"name": "Charlie", "is_active": True},
         
     ]
