@@ -5,4 +5,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Hello Django")
+    user = [
+        {"name": "Wayne", "is_active": True},
+    ]
