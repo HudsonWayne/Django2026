@@ -12,3 +12,6 @@ def create_user(request):
         if form.is_valid():
             form.save()
             return redirect('home')
+        
+         else:
+        form = UserForm()
