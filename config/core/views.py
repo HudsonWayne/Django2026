@@ -1,17 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import User
+from .forms import UserForm
 
 def home(request):
-    users = User.objects.all()  # fetch all users from DB
+    users = User.objects.all()
     return render(request, 'core/home.html', {"users": users})
 
 
 def create_user(request):
     if request.method == "POST":
-        form = UserForm(request.Post)
+        form = UserForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('home')
-        
-         else:
+    else:
         form = UserForm()
+
+    return render(request, 'core/create_user.html', {"form": form})
