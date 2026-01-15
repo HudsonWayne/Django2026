@@ -7,3 +7,5 @@ def home(request):
 
 
 def create_user(request):
+    if request.method == "POST":
+        form = UserForm(request.Post)
