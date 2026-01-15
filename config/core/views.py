@@ -9,3 +9,6 @@ def home(request):
 def create_user(request):
     if request.method == "POST":
         form = UserForm(request.Post)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
