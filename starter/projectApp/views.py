@@ -1,2 +1,5 @@
 from django.http import HttpResponse
 # Create your views here.
+
+def index(request):
+    return HttpResponse("Hello, Geeks! Welcome to your first Django app.")

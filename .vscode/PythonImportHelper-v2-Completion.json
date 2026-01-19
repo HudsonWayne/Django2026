@@ -715,6 +715,15 @@
         "documentation": {}
     },
     {
+        "label": "index",
+        "kind": 2,
+        "importPath": "starter.projectApp.views",
+        "description": "starter.projectApp.views",
+        "peekOfCode": "def index(request):\n    return HttpResponse(\"Hello, Geeks! Welcome to your first Django app.\")",
+        "detail": "starter.projectApp.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "starter.starter.asgi",
