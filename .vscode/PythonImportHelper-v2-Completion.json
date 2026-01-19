@@ -706,6 +706,15 @@
         "documentation": {}
     },
     {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "starter.projectApp.urls",
+        "description": "starter.projectApp.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n]",
+        "detail": "starter.projectApp.urls",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "starter.starter.asgi",
